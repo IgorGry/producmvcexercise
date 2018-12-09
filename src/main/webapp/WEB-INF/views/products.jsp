@@ -21,7 +21,7 @@
     <p class="lead">This page shows an account info by id for you.</p>
     <hr class="my-4">
 <c:forEach items="${productsList}" var="p">
-    <p>id: ${p.id}</p>
+    <p > <a href="/products?id=${p.id}">  id: ${p.id} </a></p>
     <p>name: ${p.name}</p>
     <p>price ${p.price}</p>
 </c:forEach>
